@@ -33,3 +33,10 @@ Lalu `sudo nginx -t && sudo systemctl reload nginx` dan pasang HTTPS:
 - Nomor WhatsApp (sementara memakai 0858-6437-6785).
 - Harga per m², status sertifikat, nama notaris/PPAT, skema tanda jadi & cicilan.
 - Luas kawasan dihitung dari citra satelit (perkiraan ±10%).
+
+## Blog otomatis
+Artikel blog ada di `blog/_posts/*.json`, dibangun dengan `python3 scripts/build_blog.py`. Tugas terjadwal Claude menambah 1 artikel per hari (lihat `AUTOPOST.md`).
+Supaya VPS ikut terbarui otomatis, pasang cron sekali di VPS:
+```bash
+( crontab -l 2>/dev/null; echo "30 7 * * * cd /var/www/exresproperty && git pull -q" ) | crontab -
+```
