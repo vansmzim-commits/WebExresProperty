@@ -10,12 +10,13 @@ const SITE = 'https://exresproperty.pilarmas.online';
 const WA_NO = '6285864376785';
 
 // Sumber: beranda exresproperty.pilarmas.online, dicek 24 Nov 2026.
-// Luas = perkiraan dari batas sketsa tim di citra satelit (±10%). Jarak = garis lurus dari kantor.
+// Luas = perkiraan dari batas sketsa tim di citra satelit (±10%). Jarak = garis lurus dari kantor
+// (kantor sejak Nov 2026: Jl. Baros, Kp. Baru, Kel. Baros · -6.958467, 106.937657).
 const KAWASAN = [
   { slug: 'pesona-limusnunggal', no: 2, nama: 'Pesona Limusnunggal', judul: 'Pesona Limusnunggal Sukabumi: Kavling SHM Blok A–H',
     kw: 'kavling dan perumahan di Limusnunggal, Cibeureum', kel: 'Limusnunggal', kec: 'Cibeureum',
     alamat: 'Limusnunggal, Kec. Cibeureum, Kota Sukabumi · dekat Jl. Lingkar Selatan',
-    luas: '± 14,2 ha', jarak: '± 1,5 km', lat: -6.944481, lng: 106.940004, img: 'satelit-pesona-limusnunggal.jpg',
+    luas: '± 14,2 ha', jarak: '± 1,6 km', lat: -6.944481, lng: 106.940004, img: 'satelit-pesona-limusnunggal.jpg',
     foto: [['lahan-siap-bangun.jpg', 'Lahan kavling siap bangun (dokumentasi lapangan 2019)'],
            ['pengerasan-jalan.jpg', 'Pengerasan jalan masuk kawasan (dokumentasi 2019)'],
            ['pembangunan-saluran.jpg', 'Pembangunan saluran & turap batu (dokumentasi 2019)'],
@@ -39,48 +40,48 @@ const KAWASAN = [
   { slug: 'jembatan-merah-indah', no: 1, nama: 'Jembatan Merah Indah', judul: 'Jembatan Merah Indah Sukabumi: Kawasan Awal EXRES',
     kw: 'perumahan dan kavling di kawasan Jembatan Merah, Limusnunggal', kel: 'Limusnunggal', kec: 'Cibeureum',
     alamat: 'Kp. Baru Kapling, Limusnunggal, Kec. Cibeureum, Kota Sukabumi',
-    luas: '± 12,0 ha', jarak: 'lokasi kantor', lat: -6.9570265, lng: 106.9335835, img: 'satelit-jembatan-merah.jpg',
+    luas: '± 12,0 ha', jarak: '± 0,5 km', lat: -6.9570265, lng: 106.9335835, img: 'satelit-jembatan-merah.jpg',
     foto: [['gerbang-jembatan-merah-indah.jpg', 'Gapura kawasan Jembatan Merah Indah · 2026'],
            ['jm-pembangunan-rumah.jpg', 'Pembangunan rumah di kawasan Jembatan Merah (arsip)'],
            ['jm-saung-jalan.jpg', 'Saung & jalan kavling di kawasan Jembatan Merah (arsip)']],
-    pembuka: 'Jembatan Merah Indah adalah kawasan pertama PT Exres Jati Manggung, di Kelurahan Limusnunggal, Kecamatan Cibeureum, Kota Sukabumi. Kantor kami ada di sini, di Kp. Baru Kapling, dekat Djembatan Merah yang jadi patokan warga Sukabumi. Dari kawasan seluas sekitar 12 ha ini kami mengembangkan kavling dan rumah di sekitarnya.',
+    pembuka: 'Jembatan Merah Indah adalah kawasan pertama PT Exres Jati Manggung, di Kelurahan Limusnunggal, Kecamatan Cibeureum, Kota Sukabumi. Kantor pertama kami berada di sini, di Kp. Baru Kapling, dekat Djembatan Merah yang jadi patokan warga Sukabumi. Kini kantor kami pindah ke Jl. Baros, Kp. Baru, Kelurahan Baros, sekitar 0,5 km dari kawasan ini. Dari kawasan seluas sekitar 12 ha ini kami mengembangkan kavling dan rumah di sekitarnya.',
     extra: '' },
   { slug: 'proklamasi-residence', no: 3, nama: 'Proklamasi Residence', judul: 'Proklamasi Residence, Jayaraksa, Kota Sukabumi',
     kw: 'perumahan di Jl. Proklamasi, Jayaraksa', kel: 'Jayaraksa', kec: 'Baros',
     alamat: 'Utara Jl. Proklamasi, Jayaraksa, Kota Sukabumi',
-    luas: '± 9.400 m²', jarak: '± 1,1 km', lat: -6.9650227, lng: 106.9285379, img: 'satelit-proklamasi.jpg', foto: [],
-    pembuka: 'Proklamasi Residence berada di sisi utara Jl. Proklamasi, Kelurahan Jayaraksa, Kota Sukabumi, sekitar 1,1 km dari kantor kami. Luas kawasannya sekitar 9.400 m².', extra: '' },
+    luas: '± 9.400 m²', jarak: '± 1,2 km', lat: -6.9650227, lng: 106.9285379, img: 'satelit-proklamasi.jpg', foto: [],
+    pembuka: 'Proklamasi Residence berada di sisi utara Jl. Proklamasi, Kelurahan Jayaraksa, Kota Sukabumi, sekitar 1,2 km dari kantor kami. Luas kawasannya sekitar 9.400 m².', extra: '' },
   { slug: 'garuda-baros', no: 4, nama: 'Perumahan Garuda 1 & 2', judul: 'Perumahan Garuda 1 & 2 Baros, Kota Sukabumi',
     kw: 'perumahan dan kavling Garuda di Baros', kel: 'Baros', kec: 'Baros',
     alamat: 'Garuda 1: antara Jl. Genteng & Jl. Safir 1, Baros · Garuda 2: sepanjang Jl. Kav. Garuda II, Baros',
-    luas: '± 3,2 ha (Garuda 1) + ± 4,8 ha (Garuda 2)', jarak: '± 0,7 km (Garuda 1) · ± 1,1 km (Garuda 2)',
+    luas: '± 3,2 ha (Garuda 1) + ± 4,8 ha (Garuda 2)', jarak: '± 0,5 km (Garuda 1) · ± 0,8 km (Garuda 2)',
     lat: -6.96215, lng: 106.940042, lat2: -6.9599693, lng2: 106.944655, img: 'satelit-garuda-1.jpg', img2: 'satelit-garuda-2.jpg', foto: [],
     pembuka: 'Perumahan Garuda 1 dan Garuda 2 adalah dua kawasan yang sudah kami kembangkan di Kelurahan Baros, Kota Sukabumi. Garuda 1 seluas sekitar 3,2 ha berada di antara Jl. Genteng dan Jl. Safir 1. Garuda 2 seluas sekitar 4,8 ha membentang di sepanjang Jl. Kav. Garuda II.', extra: '' },
   { slug: 'bumi-ciwaringin-damai', no: 6, nama: 'Bumi Ciwaringin Damai', judul: 'Bumi Ciwaringin Damai, Jayaraksa, Kota Sukabumi',
     kw: 'perumahan Bumi Ciwaringin Damai di Jl. Damai, Jayaraksa', kel: 'Jayaraksa', kec: 'Baros',
     alamat: 'Jl. Damai & Jl. Damai I, Jayaraksa · selatan Jl. Lingkar Selatan, Kota Sukabumi',
-    luas: '± 3,8 ha', jarak: '± 0,9 km', lat: -6.9514447, lng: 106.9306194, img: 'satelit-bumi-ciwaringin-damai.jpg', foto: [],
-    pembuka: 'Bumi Ciwaringin Damai adalah kawasan yang sudah kami kembangkan di Jl. Damai dan Jl. Damai I, Kelurahan Jayaraksa, di selatan Jl. Lingkar Selatan, Kota Sukabumi. Luasnya sekitar 3,8 ha, sekitar 0,9 km dari kantor kami.', extra: '' },
+    luas: '± 3,8 ha', jarak: '± 1,1 km', lat: -6.9514447, lng: 106.9306194, img: 'satelit-bumi-ciwaringin-damai.jpg', foto: [],
+    pembuka: 'Bumi Ciwaringin Damai adalah kawasan yang sudah kami kembangkan di Jl. Damai dan Jl. Damai I, Kelurahan Jayaraksa, di selatan Jl. Lingkar Selatan, Kota Sukabumi. Luasnya sekitar 3,8 ha, sekitar 1,1 km dari kantor kami.', extra: '' },
   { slug: 'kavling-lio', no: 7, nama: 'Kavling Lio', judul: 'Kavling Lio, Cikondang, Kota Sukabumi',
     kw: 'kavling di Jl. Begeg, Cikondang', kel: 'Cikondang', kec: 'Citamiang',
     alamat: 'Sisi selatan Jl. Begeg, Cikondang · dekat Jl. Lio Balandongan, Kota Sukabumi',
-    luas: '± 1.800 m²', jarak: '± 2,2 km', lat: -6.9463969, lng: 106.92273, img: 'satelit-kavling-lio.jpg', foto: [],
+    luas: '± 1.800 m²', jarak: '± 2,1 km', lat: -6.9463969, lng: 106.92273, img: 'satelit-kavling-lio.jpg', foto: [],
     pembuka: 'Kavling Lio berada di sisi selatan Jl. Begeg, Kelurahan Cikondang, dekat Jl. Lio Balandongan, Kota Sukabumi. Luasnya sekitar 1.800 m².', extra: '' },
   { slug: 'bumi-panyawangan', no: 8, nama: 'Perumahan Bumi Panyawangan', judul: 'Perumahan Bumi Panyawangan, Gedongpanjang, Kota Sukabumi',
     kw: 'perumahan di Jl. RH. Didi Sukardi, Gedongpanjang', kel: 'Gedongpanjang', kec: 'Citamiang',
     alamat: 'Jl. RH. Didi Sukardi, Gedongpanjang, Citamiang, Kota Sukabumi',
-    luas: '± 3.400 m²', jarak: '± 1,3 km', lat: -6.9455688, lng: 106.9340396, img: 'satelit-bumi-panyawangan.jpg', foto: [],
-    pembuka: 'Perumahan Bumi Panyawangan berada di Jl. RH. Didi Sukardi, Kelurahan Gedongpanjang, Kecamatan Citamiang, Kota Sukabumi. Luasnya sekitar 3.400 m², sekitar 1,3 km dari kantor kami.', extra: '' },
+    luas: '± 3.400 m²', jarak: '± 1,5 km', lat: -6.9455688, lng: 106.9340396, img: 'satelit-bumi-panyawangan.jpg', foto: [],
+    pembuka: 'Perumahan Bumi Panyawangan berada di Jl. RH. Didi Sukardi, Kelurahan Gedongpanjang, Kecamatan Citamiang, Kota Sukabumi. Luasnya sekitar 3.400 m², sekitar 1,5 km dari kantor kami.', extra: '' },
   { slug: 'pasir-gelatik-residence', no: 9, nama: 'Pasir Gelatik Residence', judul: 'Pasir Gelatik Residence, Baros, Kota Sukabumi',
     kw: 'kavling dan perumahan di Jl. Baros, Jubleg', kel: 'Baros', kec: 'Baros',
     alamat: 'Dua bidang di tepi Jl. Baros, Jubleg, Baros, Kota Sukabumi',
-    luas: '± 6.200 m² (2 bidang)', jarak: '± 1,5 km', lat: -6.965932, lng: 106.945675, img: 'satelit-pasir-gelatik.jpg', foto: [],
+    luas: '± 6.200 m² (2 bidang)', jarak: '± 1,2 km', lat: -6.965932, lng: 106.945675, img: 'satelit-pasir-gelatik.jpg', foto: [],
     pembuka: 'Pasir Gelatik Residence terdiri dari dua bidang di tepi Jl. Baros, Jubleg, Kelurahan Baros, Kota Sukabumi. Luas totalnya sekitar 6.200 m².', extra: '' },
   { slug: 'kapling-baros-pentas', no: 10, nama: 'Kapling Baros Pentas', judul: 'Kapling Baros Pentas, Jl. Larasati, Baros, Sukabumi',
     kw: 'kavling di Jl. Larasati, Baros', kel: 'Baros', kec: 'Baros',
     alamat: 'Jl. Larasati, Baros · dekat Bendung Cimandiri, Kota Sukabumi',
-    luas: '± 1,0 ha', jarak: '± 1,6 km', lat: -6.9687051, lng: 106.944185, img: 'satelit-baros-pentas.jpg', foto: [],
-    pembuka: 'Kapling Baros Pentas berada di Jl. Larasati, Kelurahan Baros, dekat Bendung Cimandiri, Kota Sukabumi. Luasnya sekitar 1 ha, sekitar 1,6 km dari kantor kami.', extra: '' },
+    luas: '± 1,0 ha', jarak: '± 1,4 km', lat: -6.9687051, lng: 106.944185, img: 'satelit-baros-pentas.jpg', foto: [],
+    pembuka: 'Kapling Baros Pentas berada di Jl. Larasati, Kelurahan Baros, dekat Bendung Cimandiri, Kota Sukabumi. Luasnya sekitar 1 ha, sekitar 1,4 km dari kantor kami.', extra: '' },
 ];
 
 const EXTRA_CSS = `.fakta{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(200px,100%),1fr));gap:12px;margin:20px 0}
@@ -119,7 +120,7 @@ ${EXTRA_CSS}</style>
 <nav><a href="${depth}#proyek">Proyek</a><a href="${depth}kawasan/">Kawasan</a><a href="${depth}#legalitas">Legalitas</a><a href="${depth}blog/">Blog</a></nav>
 <a class="btn" href="${depth}#survei">Jadwalkan Survei</a></div></header>
 ${body}
-<footer><div class="wrap">© 2026 PT Exres Jati Manggung · Kp. Baru Kapling, Limusnunggal, Kec. Cibeureum, Kota Sukabumi · Telp 0858-6437-6785 · <a href="${depth}">Beranda</a> · <a href="${depth}kawasan/">Kawasan</a> · <a href="${depth}blog/">Blog</a><br><span style="font-size:12px">${FOOT_NOTE}</span></div></footer>
+<footer><div class="wrap">© 2026 PT Exres Jati Manggung · Jl. Baros, Kp. Baru, Kel. Baros, Kec. Baros, Kota Sukabumi · Telp 0858-6437-6785 · <a href="${depth}">Beranda</a> · <a href="${depth}kawasan/">Kawasan</a> · <a href="${depth}blog/">Blog</a><br><span style="font-size:12px">${FOOT_NOTE}</span></div></footer>
 </body></html>
 `;
 }

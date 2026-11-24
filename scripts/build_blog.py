@@ -44,7 +44,7 @@ def page(title,desc,body,canon,depth='../'):
 <nav><a href="{depth}#proyek">Proyek</a><a href="{depth}kawasan/">Kawasan</a><a href="{depth}#legalitas">Legalitas</a><a href="{depth}blog/">Blog</a><a href="{depth}#faq">FAQ</a></nav>
 <a class="btn" href="{depth}#survei">Jadwalkan Survei</a></div></header>
 {body}
-<footer><div class="wrap">© 2026 PT Exres Jati Manggung · Kp. Baru Kapling, Limusnunggal, Kec. Cibeureum, Kota Sukabumi · Telp 0858-6437-6785 · <a href="{depth}">Beranda</a> · <a href="{depth}blog/">Blog</a><br><span style="font-size:12px">Artikel ini informasi umum, bukan nasihat hukum. Untuk kasus tertentu, konsultasikan dengan notaris/PPAT atau Kantor Pertanahan.</span></div></footer>
+<footer><div class="wrap">© 2026 PT Exres Jati Manggung · Jl. Baros, Kp. Baru, Kel. Baros, Kec. Baros, Kota Sukabumi · Telp 0858-6437-6785 · <a href="{depth}">Beranda</a> · <a href="{depth}blog/">Blog</a><br><span style="font-size:12px">Artikel ini informasi umum, bukan nasihat hukum. Untuk kasus tertentu, konsultasikan dengan notaris/PPAT atau Kantor Pertanahan.</span></div></footer>
 </body></html>'''
 def cta():
     return f'<div class="cta"><p>Ingin melihat langsung dokumen dan kavlingnya? Kami temani survei ke lokasi di Kota Sukabumi.</p><div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn cu" href="../../#survei">Jadwalkan survei</a><a class="btn" style="border:2px solid #fff" href="{WA}" target="_blank" rel="noopener">Tanya via WhatsApp</a></div></div>'
