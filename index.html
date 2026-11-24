@@ -437,7 +437,7 @@ class Component extends DCLogic {
         id, short: id, points,
         aria: 'Blok ' + id + ', ' + area + ', ' + L[st],
         shape: 'fill:' + (on ? 'rgba(181,106,45,0.45)' : fill[st]) + ';stroke:' + (on ? '#B56A2D' : line[st]) + ';stroke-width:' + (on ? 6 : 2.5) + ';stroke-linejoin:round',
-        pin: 'position:absolute;left:' + x + '%;top:' + y + '%;transform:translate(-50%,-50%);min-width:40px;min-height:40px;border-radius:999px;font:inherit;font-weight:800;font-size:15px;line-height:1;cursor:pointer;padding:0 8px;' + (on ? 'background:#B56A2D;color:#FFFFFF;border:3px solid #FFFFFF' : 'background:#073824;color:#FFFFFF;border:2px solid ' + line[st]),
+        pin: 'position:absolute;left:' + x + '%;top:' + y + '%;transform:translate(-50%,-50%);min-width:clamp(22px,6vw,40px);min-height:clamp(22px,6vw,40px);border-radius:999px;font:inherit;font-weight:800;font-size:clamp(11px,2.8vw,15px);line-height:1;cursor:pointer;padding:0 clamp(4px,1.2vw,8px);' + (on ? 'background:#B56A2D;color:#FFFFFF;border:2px solid #FFFFFF' : 'background:#073824;color:#FFFFFF;border:2px solid ' + line[st]),
         chip: 'font:inherit;font-weight:700;font-size:14px;min-height:44px;border-radius:8px;cursor:pointer;' + (on ? 'background:#B56A2D;color:#FFFFFF;border:2px solid #B56A2D' : 'background:#F7F3E8;color:#073824;border:2px solid #E6E6E6'),
         pick: () => this.setState({ picked: id }),
         sel: { name: 'Blok ' + id, area, statusLabel: 'Dari citra: ' + L[st], note, luas: luasTxt(points), tahap: 'Tahap ' + ('ABCDEFGH'.indexOf(id) + 1) + ' dari 8', wa: 'https://wa.me/6285864376785?text=' + encodeURIComponent('Halo Exres Property, saya tertarik Pesona Limusnunggal Blok ' + id + '. Mohon info kavling yang masih tersedia, ukuran, dan harganya.') }
