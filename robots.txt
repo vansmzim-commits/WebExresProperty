@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://exresproperty.pilarmas.online/sitemap.xml
