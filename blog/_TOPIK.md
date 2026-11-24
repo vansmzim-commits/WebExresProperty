@@ -9,7 +9,7 @@ Boleh menambah topik baru di bawah (seputar membeli kavling/rumah, legalitas, me
 ## Prioritas (riset kata kunci 24 Nov 2026, Google Keyword Planner, Indonesia)
 Kerjakan dari atas. Angka = rata-rata pencarian per bulan. Kata kunci target wajib ada di judul, kalimat pertama, dan satu <h2>.
 
-- [ ] Biaya balik nama sertifikat tanah 2026: komponen biaya dan contoh hitungan — target "biaya balik nama sertifikat tanah" (12.100)
+- [x] Biaya balik nama sertifikat tanah 2026: komponen biaya dan contoh hitungan — target "biaya balik nama sertifikat tanah" (12.100) — 2026-11-25 biaya-balik-nama-sertifikat-tanah
 - [ ] Cara cek sertifikat tanah: lewat Sentuh Tanahku dan di Kantor Pertanahan — target "cara cek sertifikat tanah" (1.900)
 - [ ] AJB tanah: apa itu, siapa yang membuat, dan kapan diperlukan — target "ajb tanah" (1.900)
 - [ ] Biaya bangun rumah per meter persegi: cara memperkirakan untuk rumah di Sukabumi — target "biaya bangun rumah" (880)
