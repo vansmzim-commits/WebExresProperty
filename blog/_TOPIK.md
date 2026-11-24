@@ -5,8 +5,24 @@ Boleh menambah topik baru di bawah (seputar membeli kavling/rumah, legalitas, me
 - [x] Cara cek legalitas kavling sebelum membayar — 2026-11-24 cek-legalitas-kavling
 - [x] SHM vs HGB — 2026-11-24 shm-vs-hgb
 - [x] Dari kavling ke rumah jadi — 2026-11-24 kavling-ke-rumah-jadi
-- [ ] Apa itu AJB dan bagaimana proses balik nama sertifikat
-- [ ] Biaya-biaya saat membeli tanah: BPHTB, PPh penjual, biaya PPAT (penjelasan umum)
+
+## Prioritas (riset kata kunci 24 Nov 2026, Google Keyword Planner, Indonesia)
+Kerjakan dari atas. Angka = rata-rata pencarian per bulan. Kata kunci target wajib ada di judul, kalimat pertama, dan satu <h2>.
+
+- [ ] Biaya balik nama sertifikat tanah 2026: komponen biaya dan contoh hitungan — target "biaya balik nama sertifikat tanah" (12.100)
+- [ ] Cara cek sertifikat tanah: lewat Sentuh Tanahku dan di Kantor Pertanahan — target "cara cek sertifikat tanah" (1.900)
+- [ ] AJB tanah: apa itu, siapa yang membuat, dan kapan diperlukan — target "ajb tanah" (1.900)
+- [ ] Biaya bangun rumah per meter persegi: cara memperkirakan untuk rumah di Sukabumi — target "biaya bangun rumah" (880)
+- [ ] Tanah SHM: arti, kelebihan, dan cara memastikannya — target "tanah shm" (390)
+- [ ] Kavling siap bangun: apa saja yang harus sudah ada — target "kavling siap bangun" (260)
+- [ ] Tinggal di Kota Sukabumi, kerja di Jakarta/Bogor: akses Tol Bocimi, kereta, dan waktu tempuh — target "tol bocimi" (6.600, sasar pembeli luar kota; tautkan daftar kawasan)
+- [ ] Perumahan di Cibeureum, Kota Sukabumi: gambaran wilayah dan fasilitas — target "perumahan cibeureum sukabumi" (140; tautkan Pesona Limusnunggal & Jembatan Merah Indah)
+- [ ] Perumahan di Baros, Kota Sukabumi: gambaran wilayah dan fasilitas — target "perumahan baros sukabumi" (90; tautkan Garuda, Pasir Gelatik, Baros Pentas)
+- [ ] HGB jadi SHM: syarat dan prosesnya — target "hgb jadi shm" (50)
+- [ ] Biaya-biaya saat membeli tanah: BPHTB, PPh penjual, biaya PPAT — target "biaya beli tanah"
+- [ ] Harga tanah di Kota Sukabumi per meter: cara membaca harga per kecamatan — target "harga tanah sukabumi per meter" (110+90+70). JANGAN tulis harga Exres; hanya cara menilai harga dan faktor yang memengaruhi, kecuali Pak Irpan sudah memberi angka resmi.
+
+## Topik lain
 - [ ] Girik, letter C, dan SHM: bedanya dan risikonya
 - [ ] Tips memilih lokasi kavling: akses jalan, air, listrik, banjir
 - [ ] Mengenal PBG dan SLF untuk rumah tinggal
@@ -16,7 +32,6 @@ Boleh menambah topik baru di bawah (seputar membeli kavling/rumah, legalitas, me
 - [ ] Cara membaca siteplan perumahan dan kavling
 - [ ] Mengenal KDB, KLB, dan garis sempadan bangunan
 - [ ] Persiapan sebelum survei lokasi kavling: daftar yang perlu dibawa & ditanyakan
-- [ ] Mengenal Kota Sukabumi: akses tol Bocimi, stasiun, dan fasilitas umum
 - [ ] Desain rumah tropis yang cocok untuk iklim Sukabumi
 - [ ] Rumah tumbuh: membangun bertahap sesuai anggaran
 - [ ] Menghitung RAB sederhana untuk rumah satu lantai
