@@ -2,7 +2,7 @@
 """Bangun halaman blog dari blog/_posts/*.json.
 Jalankan dari root repo:  python3 scripts/build_blog.py
 Setiap post JSON: slug, tag, title, description, date (YYYY-MM-DD), body_html.
-Menghasilkan: blog/index.html, blog/<slug>/index.html, sitemap.xml.
+Menghasilkan: blog/index.html, blog/<slug>/index.html, sitemap.xml (ikut memuat halaman kawasan/*.html).
 """
 import json, glob, os, html
 ROOT=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -41,7 +41,7 @@ def page(title,desc,body,canon,depth='../'):
 <link rel="icon" href="{depth}assets/img/favicon.svg" type="image/svg+xml"><meta name="theme-color" content="#0B5D3B">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>{CSS}</style></head><body>
 <header><div class="wrap top"><a class="brand" href="{depth}">{LOGO}<span><b>EXRES</b><small>PROPERTY</small></span></a>
-<nav><a href="{depth}#proyek">Proyek</a><a href="{depth}#legalitas">Legalitas</a><a href="{depth}blog/">Blog</a><a href="{depth}#faq">FAQ</a></nav>
+<nav><a href="{depth}#proyek">Proyek</a><a href="{depth}kawasan/">Kawasan</a><a href="{depth}#legalitas">Legalitas</a><a href="{depth}blog/">Blog</a><a href="{depth}#faq">FAQ</a></nav>
 <a class="btn" href="{depth}#survei">Jadwalkan Survei</a></div></header>
 {body}
 <footer><div class="wrap">© 2026 PT Exres Jati Manggung · Kp. Baru Kapling, Limusnunggal, Kec. Cibeureum, Kota Sukabumi · Telp 0858-6437-6785 · <a href="{depth}">Beranda</a> · <a href="{depth}blog/">Blog</a><br><span style="font-size:12px">Artikel ini informasi umum, bukan nasihat hukum. Untuk kasus tertentu, konsultasikan dengan notaris/PPAT atau Kantor Pertanahan.</span></div></footer>
@@ -68,6 +68,9 @@ def main():
     open(os.path.join(ROOT,'blog','index.html'),'w').write(page('Blog & edukasi pembeli kavling','Panduan legalitas kavling, sertifikat tanah, membangun rumah, dan info kawasan dari PT Exres Jati Manggung, Kota Sukabumi.',idx,'blog/'))
     last=posts[0]['date'] if posts else '2026-11-24'
     urls=[('',last),('blog/',last)]+[(f'blog/{p["slug"]}/',p['date']) for p in posts]
+    kdir=os.path.join(ROOT,'kawasan')
+    if os.path.isdir(kdir):
+        urls+=[('kawasan/'+('' if f=='index.html' else f),last) for f in sorted(os.listdir(kdir)) if f.endswith('.html')]
     sm='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join(f'  <url><loc>{SITE}/{u}</loc><lastmod>{d}</lastmod></url>\n' for u,d in urls)+'</urlset>\n'
     open(os.path.join(ROOT,'sitemap.xml'),'w').write(sm)
     print(f'{len(posts)} artikel dibangun')
