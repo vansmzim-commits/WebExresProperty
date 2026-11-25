@@ -15,7 +15,7 @@ Kerjakan dari atas. Angka = rata-rata pencarian per bulan. Kata kunci target waj
 - [ ] Biaya bangun rumah per meter persegi: cara memperkirakan untuk rumah di Sukabumi — target "biaya bangun rumah" (880)
 - [ ] Tanah SHM: arti, kelebihan, dan cara memastikannya — target "tanah shm" (390)
 - [ ] Kavling siap bangun: apa saja yang harus sudah ada — target "kavling siap bangun" (260)
-- [ ] Tinggal di Kota Sukabumi, kerja di Jakarta/Bogor: akses Tol Bocimi, kereta, dan waktu tempuh — target "tol bocimi" (6.600, sasar pembeli luar kota; tautkan daftar kawasan)
+- [x] Tinggal di Kota Sukabumi, kerja di Jakarta/Bogor: akses Tol Bocimi, kereta, dan waktu tempuh — target "tol bocimi" (6.600, sasar pembeli luar kota; tautkan daftar kawasan) — 2026-11-25 tinggal-di-sukabumi-kerja-di-jakarta-bogor (permintaan Pak Irpan)
 - [ ] Perumahan di Cibeureum, Kota Sukabumi: gambaran wilayah dan fasilitas — target "perumahan cibeureum sukabumi" (140; tautkan Pesona Limusnunggal & Jembatan Merah Indah)
 - [ ] Perumahan di Baros, Kota Sukabumi: gambaran wilayah dan fasilitas — target "perumahan baros sukabumi" (90; tautkan Garuda, Bukit Baros, Baros Pentas)
 - [ ] HGB jadi SHM: syarat dan prosesnya — target "hgb jadi shm" (50)
