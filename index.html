@@ -153,6 +153,12 @@ a{color:#8E4F1E}a:hover{color:#6E3C15}
 .cmp-valm{color:#6B6457}
 @media (max-width:600px){.cmp-bar{grid-template-columns:46px 1fr 92px}.cmp-val{font-size:14px}}
 </style>
+<style>
+#ke-atas{position:fixed;right:30px;bottom:100px;width:48px;height:56px;border-radius:12px;background:#B56A2D;color:#FFFFFF;text-decoration:none;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;font-size:10px;font-weight:700;z-index:5;box-shadow:0 6px 16px rgba(7,56,36,.25);opacity:0;visibility:hidden;transform:translateY(10px);transition:opacity .2s,transform .2s,visibility .2s}
+#ke-atas.tampil{opacity:1;visibility:visible;transform:none}
+#ke-atas:hover,#ke-atas:focus-visible{background:#8E4F1E}
+@media (prefers-reduced-motion:reduce){#ke-atas{transition:none}}
+</style>
 </head>
 <body>
 <div style="width:100%;font-family:'Montserrat',system-ui,sans-serif;background:#F7F3E8;position:relative">
@@ -597,6 +603,7 @@ a{color:#8E4F1E}a:hover{color:#6E3C15}
 <div style="max-width:1200px;margin:0 auto;padding:16px 24px 28px;border-top:1px solid #1E5A40;font-size:13px">© 2026 PT Exres Jati Manggung · Luas kawasan adalah perkiraan dari citra satelit Google.</div>
 </footer>
 
+<a href="#top" id="ke-atas" aria-label="Kembali ke atas" title="Kembali ke atas"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19 V5 M5 12 L12 5 L19 12" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Atas</span></a>
 <a href="https://wa.me/6285864376785?text=Halo%20Exres%20Property%2C%20saya%20ingin%20tanya%20kavling%20yang%20masih%20tersedia%20beserta%20harganya." target="_blank" rel="noopener" aria-label="Chat WhatsApp dengan Exres Property" class="wa-float" style="position:fixed;right:24px;bottom:24px;width:60px;height:60px;border-radius:50%;background:#0B5D3B;border:3px solid #B56A2D;display:flex;align-items:center;justify-content:center;z-index:5"><svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7L4 20z" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round"></path></svg></a>
 </div>
 
@@ -744,6 +751,12 @@ class Component extends DCLogic {
   });
   hitung();
 })();
+</script>
+<script>
+(function(){var b=document.getElementById('ke-atas');if(!b)return;
+function cek(){b.classList.toggle('tampil',window.scrollY>700);}
+window.addEventListener('scroll',cek,{passive:true});cek();
+b.addEventListener('click',function(e){e.preventDefault();var r=window.matchMedia('(prefers-reduced-motion: reduce)').matches;window.scrollTo({top:0,behavior:r?'auto':'smooth'});if(history.replaceState)history.replaceState(null,'',location.pathname);});})();
 </script>
 </body>
 </html>
