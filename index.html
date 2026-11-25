@@ -100,7 +100,7 @@ a{color:#8E4F1E}a:hover{color:#6E3C15}
 .sim-grid div{display:flex;flex-direction:column;gap:2px;border-top:1px solid rgba(255,255,255,.18);padding-top:10px}
 .sim-grid span{font-size:12px;color:#C9DCCF;line-height:1.35}.sim-grid b{font-size:18px;font-weight:800}
 .sim-note{font-size:12px;line-height:1.5;color:#C9DCCF}
-@media (max-width:600px){#simulasi .sim-card{padding:16px}.sim-total b{font-size:28px}h1{font-size:34px!important}}
+@media (max-width:600px){#simulasi .sim-card{padding:16px}.sim-total b{font-size:28px}}
 @media (max-width:980px){#simulasi [style*="position:sticky"]{position:static!important}}
 </style>
 <style>
@@ -165,6 +165,31 @@ a{color:#8E4F1E}a:hover{color:#6E3C15}
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18462923846"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-18462923846');
 document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a[href*="wa.me"],a[href*="api.whatsapp.com"]');if(a){gtag('event','conversion',{'send_to':'AW-18462923846/_MstCM7UhL8dEMa45-NE'});}},true);</script>
+<style>
+.prods{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;max-width:600px}
+.prod{background:rgba(255,255,255,.08);border:1px solid rgba(217,184,147,.6);border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:3px}
+.prod svg{margin-bottom:4px}
+.prod-t{font-size:14px;font-weight:800;color:#FFFFFF;line-height:1.25}
+.prod-p{font-size:16px;font-weight:800;color:#D9B893}
+.prod-s{font-size:12px;color:#C9DCCF;line-height:1.35}
+.nav-mob{display:none;position:relative}
+.nav-mob summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:6px;font-weight:700;font-size:14px;color:#0B5D3B;border:2px solid #D7E3DB;border-radius:8px;padding:9px 12px;min-height:44px}
+.nav-mob summary::-webkit-details-marker{display:none}
+.nav-mob nav{position:absolute;right:0;top:52px;z-index:20;background:#FFFFFF;border:1px solid #E6E1D3;border-radius:12px;box-shadow:0 12px 30px rgba(7,56,36,.18);padding:8px;display:flex;flex-direction:column;min-width:210px}
+.nav-mob nav a{padding:11px 12px;border-radius:8px;font-weight:700;font-size:15px}
+.nav-mob nav a:hover{background:#F7F3E8}
+@media (max-width:760px){
+ .nav-main{display:none!important}.nav-mob{display:block}
+ header>div{flex-wrap:nowrap!important;padding:10px 16px!important;gap:10px!important}
+ .btn-survei{padding:10px 14px!important;font-size:13px!important}
+ #top>div:first-of-type{padding-top:20px!important;gap:24px!important}
+ .hero-fig{order:-1;flex-basis:100%!important}
+ .hero-h1{font-size:32px!important}
+ .prods{grid-template-columns:1fr}
+ .prod{display:grid;grid-template-columns:30px 1fr auto;align-items:center;column-gap:10px;row-gap:2px;padding:12px 14px}
+ .prod svg{margin:0;grid-row:1 / 3}.prod-t{grid-column:2}.prod-p{grid-column:3;grid-row:1;text-align:right;font-size:15px}.prod-s{grid-column:2 / 4;grid-row:2}
+}
+</style>
 </head>
 <body>
 <div style="width:100%;font-family:'Montserrat',system-ui,sans-serif;background:#F7F3E8;position:relative">
@@ -172,7 +197,7 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&
 <header style="background:#FFFFFF;border-bottom:3px solid #B56A2D">
 <div style="max-width:1200px;margin:0 auto;padding:14px 24px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
 <a href="#top" aria-label="EXRES PROPERTY, PT Exres Jati Manggung, beranda" style="display:flex;align-items:center;text-decoration:none"><img src="assets/img/logo-exres.png" alt="EXRES PROPERTY · PT Exres Jati Manggung" width="114" height="88" class="logo-head" style="display:block;height:88px;width:auto"></a>
-<nav aria-label="Menu utama" style="display:flex;flex-wrap:wrap;gap:16px;font-size:14px;font-weight:600">
+<nav class="nav-main" aria-label="Menu utama" style="display:flex;flex-wrap:wrap;gap:16px;font-size:14px;font-weight:600">
 <a href="#keunggulan" style="color:#0B5D3B;text-decoration:none">Keunggulan</a>
 <a href="#simulasi" style="color:#0B5D3B;text-decoration:none">Simulasi Harga</a>
 <a href="#proyek" style="color:#0B5D3B;text-decoration:none">Proyek</a>
@@ -182,7 +207,17 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&
 <a href="#faq" style="color:#0B5D3B;text-decoration:none">FAQ</a>
 <a href="blog/" style="color:#0B5D3B;text-decoration:none">Blog</a>
 </nav>
-<a href="#survei" style="background:#0B5D3B;color:#FFFFFF;text-decoration:none;font-weight:700;font-size:14px;padding:12px 22px;border-radius:8px;min-height:44px;display:inline-flex;align-items:center">Jadwalkan Survei</a>
+<details class="nav-mob"><summary aria-label="Buka menu"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7 H20 M4 12 H20 M4 17 H20" stroke="#0B5D3B" stroke-width="2.4" stroke-linecap="round"/></svg>Menu</summary><nav aria-label="Menu utama (HP)">
+<a href="#keunggulan" style="color:#0B5D3B;text-decoration:none">Keunggulan</a>
+<a href="#simulasi" style="color:#0B5D3B;text-decoration:none">Simulasi Harga</a>
+<a href="#proyek" style="color:#0B5D3B;text-decoration:none">Proyek</a>
+<a href="#jejak" style="color:#0B5D3B;text-decoration:none">Kawasan</a>
+<a href="#galeri" style="color:#0B5D3B;text-decoration:none">Galeri</a>
+<a href="#legalitas" style="color:#0B5D3B;text-decoration:none">Legalitas</a>
+<a href="#faq" style="color:#0B5D3B;text-decoration:none">FAQ</a>
+<a href="blog/" style="color:#0B5D3B;text-decoration:none">Blog</a>
+</nav></details>
+<a href="#survei" class="btn-survei" style="background:#0B5D3B;color:#FFFFFF;text-decoration:none;font-weight:700;font-size:14px;padding:12px 22px;border-radius:8px;min-height:44px;display:inline-flex;align-items:center">Jadwalkan Survei</a>
 </div>
 </header>
 
@@ -190,16 +225,16 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&
 <svg viewBox="0 0 600 300" aria-hidden="true" style="position:absolute;right:-60px;top:20px;width:620px;height:310px"><path d="M40 260 L300 60 L560 260" fill="none" stroke="#2E7D5B" stroke-width="18" stroke-linejoin="miter"></path><path d="M180 260 L380 110 L580 260" fill="none" stroke="#2E7D5B" stroke-width="10" opacity="0.6"></path></svg>
 <div style="max-width:1200px;margin:0 auto;padding:72px 24px 40px;display:flex;flex-wrap:wrap;gap:48px;align-items:center;position:relative">
 <div style="flex:1 1 480px;min-width:0;display:flex;flex-direction:column;gap:22px">
-<span style="font-size:13px;font-weight:700;letter-spacing:3px;color:#D9B893">PT EXRES JATI MANGGUNG · SEJAK 1998</span>
-<h1 style="margin:0;font-size:50px;line-height:1.1;font-weight:800">Tanah dulu. Rumah sesuai selera. SHM atas nama Anda.</h1>
-<p style="margin:0;font-size:18px;line-height:1.6;color:#E3EEE7;max-width:540px">Kavling di Kota Sukabumi mulai <strong style="color:#FFFFFF">Rp1,2 juta/m², sudah termasuk AJB, BPHTB &amp; balik nama SHM</strong>. Bayar tanahnya dulu, bangun rumahnya saat Anda siap. Model dan ukuran rumah Anda yang tentukan.</p>
-<div style="align-self:flex-start;display:flex;flex-direction:column;gap:2px;background:rgba(255,255,255,.1);border:1px solid #D9B893;border-radius:12px;padding:12px 18px"><span style="font-size:13px;font-weight:600;color:#D9B893">Contoh: tanah 100 m² + rumah tipe 36</span><span style="font-size:26px;font-weight:800;color:#FFFFFF">mulai Rp210 juta</span></div>
+<span style="font-size:13px;font-weight:700;letter-spacing:3px;color:#D9B893">DEVELOPER KAVLING · KOTA SUKABUMI · SEJAK 1998</span>
+<h1 class="hero-h1" style="margin:0;font-size:48px;line-height:1.1;font-weight:800">Jual Tanah Kavling &amp; Bangun Rumah di Kota Sukabumi</h1>
+<p style="margin:0;font-size:19px;line-height:1.55;color:#E3EEE7;max-width:560px"><strong style="color:#FFFFFF">Tanah dulu, rumah sesuai selera, SHM atas nama Anda.</strong> Harga tanah sudah termasuk AJB, BPHTB &amp; balik nama sertifikat.</p>
+<div class="prods" aria-label="Yang kami jual"><div class="prod"><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20 H21 M5 20 L9 11 L13 16 L16 12 L21 20 M16 7 A2 2 0 1 0 16 3 A2 2 0 1 0 16 7" fill="none" stroke="#D9B893" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="prod-t">Tanah kavling SHM</span><span class="prod-p">mulai Rp1,2 jt/m²</span><span class="prod-s">berbagai ukuran, 10 kawasan</span></div><div class="prod"><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11 L12 4 L21 11 M6 9.5 V20 H18 V9.5 M10 20 V14 H14 V20" fill="none" stroke="#D9B893" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="prod-t">Bangun rumah</span><span class="prod-p">Rp2,5–3,5 jt/m²</span><span class="prod-s">model &amp; ukuran sesuai selera</span></div><div class="prod"><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8 L12 4 L20 8 V16 L12 20 L4 16 Z M4 8 L12 12 L20 8 M12 12 V20" fill="none" stroke="#D9B893" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="prod-t">Paket tanah + rumah</span><span class="prod-p">mulai Rp210 jt</span><span class="prod-s">tanah 100 m² + tipe 36</span></div></div>
 <div style="display:flex;flex-wrap:wrap;gap:12px">
 <a href="#simulasi" style="background:#B56A2D;color:#FFFFFF;text-decoration:none;font-weight:700;font-size:18px;padding:12px 26px;border-radius:8px;min-height:52px;display:inline-flex;align-items:center">Hitung Harga Rumah Anda</a>
 <a href="https://wa.me/6285864376785?text=Halo%20Exres%20Property%2C%20saya%20ingin%20tanya%20kavling%20yang%20masih%20tersedia%20beserta%20harganya." target="_blank" rel="noopener" style="border:2px solid #F7F3E8;color:#FFFFFF;text-decoration:none;font-weight:600;font-size:16px;padding:12px 24px;border-radius:8px;min-height:52px;display:inline-flex;align-items:center">Konsultasi via WhatsApp</a>
 </div>
 </div>
-<figure style="flex:1 1 480px;min-width:0;aspect-ratio:1672/941;align-self:center;margin:0;border-radius:16px;overflow:hidden;position:relative;border:4px solid #F7F3E8;background:#F7F3E8"><img src="assets/img/hero-rumah-gambar-kerja.jpg" alt="Ilustrasi rumah di atas gambar kerja arsitek dengan penggaris dan pensil" fetchpriority="high" width="1672" height="941" style="width:100%;height:100%;object-fit:cover;display:block"><span style="position:absolute;bottom:14px;left:14px;display:inline-flex;align-items:center;gap:8px;background:#FFFFFF;color:#073824;font-size:14px;font-weight:800;padding:10px 14px;border-radius:999px;box-shadow:0 6px 18px rgba(0,0,0,.18)"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#0B5D3B"></circle><path d="M7 12.5 L10.5 16 L17 9" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>Terima beres sampai SHM</span></figure>
+<figure class="hero-fig" style="flex:1 1 480px;min-width:0;aspect-ratio:1672/941;align-self:center;margin:0;border-radius:16px;overflow:hidden;position:relative;border:4px solid #F7F3E8;background:#F7F3E8"><img src="assets/img/hero-rumah-gambar-kerja.jpg" alt="Ilustrasi rumah di atas gambar kerja arsitek dengan penggaris dan pensil" fetchpriority="high" width="1672" height="941" style="width:100%;height:100%;object-fit:cover;display:block"><span style="position:absolute;bottom:14px;left:14px;display:inline-flex;align-items:center;gap:8px;background:#FFFFFF;color:#073824;font-size:14px;font-weight:800;padding:10px 14px;border-radius:999px;box-shadow:0 6px 18px rgba(0,0,0,.18)"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#0B5D3B"></circle><path d="M7 12.5 L10.5 16 L17 9" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>Terima beres sampai SHM</span></figure>
 </div>
 <div style="max-width:1200px;margin:0 auto;padding:0 24px 24px;position:relative">
 <div aria-label="Keunggulan Exres" style="background:#FFFFFF;border-radius:12px;padding:20px 22px;display:flex;flex-wrap:wrap;gap:18px 28px;color:#1F2A24;border-top:4px solid #B56A2D"><div style="flex:1 1 230px;min-width:0;display:flex;gap:12px;align-items:center"><span style="flex:0 0 auto;width:44px;height:44px;border-radius:10px;border:2px solid #0B5D3B;display:flex;align-items:center;justify-content:center"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3 H14 L19 8 V21 H7 Z M14 3 V8 H19 M10 13 H16 M10 17 H16" fill="none" stroke="#0B5D3B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span style="display:flex;flex-direction:column;gap:2px"><span style="font-weight:700;font-size:15px;color:#073824">SHM tanpa biaya tambahan</span><span style="font-size:13px;color:#4A564F;line-height:1.4">AJB, BPHTB &amp; balik nama termasuk</span></span></div><div style="flex:1 1 230px;min-width:0;display:flex;gap:12px;align-items:center"><span style="flex:0 0 auto;width:44px;height:44px;border-radius:10px;border:2px solid #0B5D3B;display:flex;align-items:center;justify-content:center"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20 H20 M6 20 V12 M12 20 V8 M18 20 V4" fill="none" stroke="#0B5D3B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span style="display:flex;flex-direction:column;gap:2px"><span style="font-weight:700;font-size:15px;color:#073824">Bisa bertahap</span><span style="font-size:13px;color:#4A564F;line-height:1.4">Tanah dulu, bangun saat siap</span></span></div><div style="flex:1 1 230px;min-width:0;display:flex;gap:12px;align-items:center"><span style="flex:0 0 auto;width:44px;height:44px;border-radius:10px;border:2px solid #0B5D3B;display:flex;align-items:center;justify-content:center"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11 L12 4 L21 11 M6 9.5 V20 H18 V9.5 M10 20 V14 H14 V20" fill="none" stroke="#0B5D3B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span style="display:flex;flex-direction:column;gap:2px"><span style="font-weight:700;font-size:15px;color:#073824">Rumah sesuai selera</span><span style="font-size:13px;color:#4A564F;line-height:1.4">Dibangun setelah Anda deal</span></span></div><div style="flex:1 1 230px;min-width:0;display:flex;gap:12px;align-items:center"><span style="flex:0 0 auto;width:44px;height:44px;border-radius:10px;border:2px solid #0B5D3B;display:flex;align-items:center;justify-content:center"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21 C12 21 5 14.5 5 9.5 A7 7 0 0 1 19 9.5 C19 14.5 12 21 12 21 Z M12 12 A2.5 2.5 0 1 0 12 7 A2.5 2.5 0 1 0 12 12" fill="none" stroke="#0B5D3B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span style="display:flex;flex-direction:column;gap:2px"><span style="font-weight:700;font-size:15px;color:#073824">Sejak 1998</span><span style="font-size:13px;color:#4A564F;line-height:1.4">10 kawasan, ± 41 ha di Kota Sukabumi</span></span></div></div>
@@ -760,5 +795,6 @@ function cek(){b.classList.toggle('tampil',window.scrollY>700);}
 window.addEventListener('scroll',cek,{passive:true});cek();
 b.addEventListener('click',function(e){e.preventDefault();var r=window.matchMedia('(prefers-reduced-motion: reduce)').matches;window.scrollTo({top:0,behavior:r?'auto':'smooth'});if(history.replaceState)history.replaceState(null,'',location.pathname);});})();
 </script>
+<script>document.querySelectorAll('.nav-mob nav a').forEach(function(a){a.addEventListener('click',function(){a.closest('details').removeAttribute('open');});});</script>
 </body>
 </html>
