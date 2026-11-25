@@ -11,12 +11,12 @@ WA='https://wa.me/6285864376785?text=Halo%20Exres%20Property%2C%20saya%20baca%20
 BULAN=['Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember']
 def tgl(d):
     y,m,dd=d.split('-'); return f'{int(dd)} {BULAN[int(m)-1]} {y}'
-LOGO='<svg width="96" height="40" viewBox="0 0 480 200" aria-hidden="true"><path d="M15 187 L243 17 L292 60 L105 187 Z" fill="#0B5D3B"></path><path d="M240 17 L262 17 L470 188 L420 188 Z" fill="#B56A2D"></path><rect x="212" y="66" width="26" height="26" fill="#B56A2D"></rect><rect x="244" y="66" width="26" height="26" fill="#B56A2D"></rect><rect x="212" y="98" width="26" height="26" fill="#B56A2D"></rect><rect x="244" y="98" width="26" height="26" fill="#B56A2D"></rect></svg>'
+LOGO='<img src="/assets/img/logo-exres.png" alt="EXRES PROPERTY · PT Exres Jati Manggung" width="83" height="64" class="logo-img">'
 CSS='''*{box-sizing:border-box}body{margin:0;font-family:'Montserrat',system-ui,sans-serif;color:#1F2A24;background:#F7F3E8}
 a{color:#8E4F1E}a:hover{color:#6E3C15}
 header{background:#fff;border-bottom:3px solid #B56A2D}.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
 .top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;padding-top:14px;padding-bottom:14px}
-.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:#0B5D3B}.brand b{font-size:22px;letter-spacing:1px;display:block;line-height:1}.brand small{font-size:10px;letter-spacing:4px;font-weight:700}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:#0B5D3B}.logo-img{display:block;height:64px;width:auto}.brand b{font-size:22px;letter-spacing:1px;display:block;line-height:1}.brand small{font-size:10px;letter-spacing:4px;font-weight:700}
 nav a{color:#0B5D3B;text-decoration:none;font-weight:600;font-size:14px;margin-left:20px}
 .btn{display:inline-flex;align-items:center;min-height:46px;padding:10px 20px;border-radius:8px;background:#0B5D3B;color:#fff!important;text-decoration:none;font-weight:700}
 .btn.cu{background:#B56A2D}
@@ -38,9 +38,9 @@ def page(title,desc,body,canon,depth='../'):
     return f'''<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{html.escape(title)} · EXRES PROPERTY</title><meta name="description" content="{html.escape(desc)}">
 <link rel="canonical" href="https://exresproperty.pilarmas.online/{canon}"><meta property="og:title" content="{html.escape(title)}"><meta property="og:description" content="{html.escape(desc)}"><meta property="og:type" content="article">
-<link rel="icon" href="{depth}assets/img/favicon.svg" type="image/svg+xml"><meta name="theme-color" content="#0B5D3B">
+<link rel="icon" href="{depth}assets/img/favicon-64.png" type="image/png"><link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png"><meta name="theme-color" content="#0B5D3B">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>{CSS}</style></head><body>
-<header><div class="wrap top"><a class="brand" href="{depth}">{LOGO}<span><b>EXRES</b><small>PROPERTY</small></span></a>
+<header><div class="wrap top"><a class="brand" href="{depth}">{LOGO}</a>
 <nav><a href="{depth}#proyek">Proyek</a><a href="{depth}kawasan/">Kawasan</a><a href="{depth}#legalitas">Legalitas</a><a href="{depth}blog/">Blog</a><a href="{depth}#faq">FAQ</a></nav>
 <a class="btn" href="{depth}#survei">Jadwalkan Survei</a></div></header>
 {body}

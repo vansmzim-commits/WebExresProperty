@@ -112,11 +112,11 @@ function shell({ CSS, LOGO }, title, desc, body, canon, ld, depth = '../') {
 <title>${t} · EXRES PROPERTY</title><meta name="description" content="${d}">
 <link rel="canonical" href="${SITE}/${canon}"><meta name="robots" content="index, follow, max-image-preview:large">
 <meta property="og:title" content="${t}"><meta property="og:description" content="${d}"><meta property="og:type" content="website"><meta property="og:url" content="${SITE}/${canon}"><meta property="og:locale" content="id_ID"><meta property="og:site_name" content="EXRES PROPERTY">
-<link rel="icon" href="${depth}assets/img/favicon.svg" type="image/svg+xml"><meta name="theme-color" content="#0B5D3B">
+<link rel="icon" href="${depth}assets/img/favicon-64.png" type="image/png"><link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png"><meta name="theme-color" content="#0B5D3B">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>${CSS}
 ${EXTRA_CSS}</style>
 <script type="application/ld+json">${JSON.stringify(ld)}</script></head><body>
-<header><div class="wrap top"><a class="brand" href="${depth}">${LOGO}<span><b>EXRES</b><small>PROPERTY</small></span></a>
+<header><div class="wrap top"><a class="brand" href="${depth}">${LOGO}</a>
 <nav><a href="${depth}#proyek">Proyek</a><a href="${depth}kawasan/">Kawasan</a><a href="${depth}#legalitas">Legalitas</a><a href="${depth}blog/">Blog</a></nav>
 <a class="btn" href="${depth}#survei">Jadwalkan Survei</a></div></header>
 ${body}
