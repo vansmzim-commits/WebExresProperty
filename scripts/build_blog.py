@@ -34,12 +34,17 @@ table{border-collapse:collapse;width:100%;font-size:15px;margin:12px 0}th,td{bor
 .meta{font-size:13px;color:#4A564F}
 footer{background:#073824;color:#D3E3D9;padding:32px 0;font-size:14px;margin-top:40px}footer a{color:#D9B893}
 @media(max-width:600px){.hero h1{font-size:30px}nav a{margin:0 14px 0 0}}'''
+GTAG='''<!-- Google Ads: tag + konversi klik WhatsApp -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18462923846"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-18462923846');
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a[href*="wa.me"],a[href*="api.whatsapp.com"]');if(a){gtag('event','conversion',{'send_to':'AW-18462923846/_MstCM7UhL8dEMa45-NE'});}},true);</script>
+'''
 def page(title,desc,body,canon,depth='../'):
     return f'''<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{html.escape(title)} · EXRES PROPERTY</title><meta name="description" content="{html.escape(desc)}">
 <link rel="canonical" href="https://exresproperty.pilarmas.online/{canon}"><meta property="og:title" content="{html.escape(title)}"><meta property="og:description" content="{html.escape(desc)}"><meta property="og:type" content="article">
 <link rel="icon" href="{depth}assets/img/favicon-64.png" type="image/png"><link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png"><meta name="theme-color" content="#0B5D3B">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>{CSS}</style></head><body>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>{CSS}</style>{GTAG}</head><body>
 <header><div class="wrap top"><a class="brand" href="{depth}">{LOGO}</a>
 <nav><a href="{depth}#proyek">Proyek</a><a href="{depth}kawasan/">Kawasan</a><a href="{depth}#legalitas">Legalitas</a><a href="{depth}blog/">Blog</a><a href="{depth}#faq">FAQ</a></nav>
 <a class="btn" href="{depth}#survei">Jadwalkan Survei</a></div></header>

@@ -106,6 +106,8 @@ function fromBlog(py) {
   return { CSS: css[1], LOGO: logo[1] };
 }
 
+const GTAG = '<!-- Google Ads: tag + konversi klik WhatsApp -->\n<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18462923846"></script>\n<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag(\'js\',new Date());gtag(\'config\',\'AW-18462923846\');\ndocument.addEventListener(\'click\',function(e){var a=e.target&&e.target.closest&&e.target.closest(\'a[href*="wa.me"],a[href*="api.whatsapp.com"]\');if(a){gtag(\'event\',\'conversion\',{\'send_to\':\'AW-18462923846/_MstCM7UhL8dEMa45-NE\'});}},true);</script>\n';
+
 function shell({ CSS, LOGO }, title, desc, body, canon, ld, depth = '../') {
   const t = esc(title), d = esc(desc);
   return `<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
@@ -115,7 +117,7 @@ function shell({ CSS, LOGO }, title, desc, body, canon, ld, depth = '../') {
 <link rel="icon" href="${depth}assets/img/favicon-64.png" type="image/png"><link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png"><meta name="theme-color" content="#0B5D3B">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>${CSS}
 ${EXTRA_CSS}</style>
-<script type="application/ld+json">${JSON.stringify(ld)}</script></head><body>
+<script type="application/ld+json">${JSON.stringify(ld)}</script>${GTAG}</head><body>
 <header><div class="wrap top"><a class="brand" href="${depth}">${LOGO}</a>
 <nav><a href="${depth}#proyek">Proyek</a><a href="${depth}kawasan/">Kawasan</a><a href="${depth}#legalitas">Legalitas</a><a href="${depth}blog/">Blog</a></nav>
 <a class="btn" href="${depth}#survei">Jadwalkan Survei</a></div></header>
