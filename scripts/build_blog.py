@@ -70,7 +70,7 @@ def main():
     urls=[('',last),('blog/',last)]+[(f'blog/{p["slug"]}/',p['date']) for p in posts]
     kdir=os.path.join(ROOT,'kawasan')
     if os.path.isdir(kdir):
-        urls+=[('kawasan/'+('' if f=='index.html' else f),last) for f in sorted(os.listdir(kdir)) if f.endswith('.html')]
+        urls+=[('kawasan/'+('' if f=='index.html' else f),last) for f in sorted(os.listdir(kdir)) if f.endswith('.html') and 'http-equiv="refresh"' not in open(os.path.join(kdir,f)).read()]
     sm='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join(f'  <url><loc>{SITE}/{u}</loc><lastmod>{d}</lastmod></url>\n' for u,d in urls)+'</urlset>\n'
     open(os.path.join(ROOT,'sitemap.xml'),'w').write(sm)
     print(f'{len(posts)} artikel dibangun')

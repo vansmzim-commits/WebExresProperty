@@ -17,7 +17,7 @@ Kerjakan dari atas. Angka = rata-rata pencarian per bulan. Kata kunci target waj
 - [ ] Kavling siap bangun: apa saja yang harus sudah ada — target "kavling siap bangun" (260)
 - [ ] Tinggal di Kota Sukabumi, kerja di Jakarta/Bogor: akses Tol Bocimi, kereta, dan waktu tempuh — target "tol bocimi" (6.600, sasar pembeli luar kota; tautkan daftar kawasan)
 - [ ] Perumahan di Cibeureum, Kota Sukabumi: gambaran wilayah dan fasilitas — target "perumahan cibeureum sukabumi" (140; tautkan Pesona Limusnunggal & Jembatan Merah Indah)
-- [ ] Perumahan di Baros, Kota Sukabumi: gambaran wilayah dan fasilitas — target "perumahan baros sukabumi" (90; tautkan Garuda, Pasir Gelatik, Baros Pentas)
+- [ ] Perumahan di Baros, Kota Sukabumi: gambaran wilayah dan fasilitas — target "perumahan baros sukabumi" (90; tautkan Garuda, Bukit Baros, Baros Pentas)
 - [ ] HGB jadi SHM: syarat dan prosesnya — target "hgb jadi shm" (50)
 - [ ] Biaya-biaya saat membeli tanah: BPHTB, PPh penjual, biaya PPAT — target "biaya beli tanah"
 - [ ] Harga tanah di Kota Sukabumi per meter: cara membaca harga per kecamatan — target "harga tanah sukabumi per meter" (110+90+70). JANGAN tulis harga Exres; hanya cara menilai harga dan faktor yang memengaruhi, kecuali Pak Irpan sudah memberi angka resmi.
