@@ -10,7 +10,7 @@ Boleh menambah topik baru di bawah (seputar membeli kavling/rumah, legalitas, me
 Kerjakan dari atas. Angka = rata-rata pencarian per bulan. Kata kunci target wajib ada di judul, kalimat pertama, dan satu <h2>.
 
 - [x] Biaya balik nama sertifikat tanah 2026: komponen biaya dan contoh hitungan — target "biaya balik nama sertifikat tanah" (12.100) — 2026-11-25 biaya-balik-nama-sertifikat-tanah
-- [ ] Cara cek sertifikat tanah: lewat Sentuh Tanahku dan di Kantor Pertanahan — target "cara cek sertifikat tanah" (1.900)
+- [x] Cara cek sertifikat tanah: lewat Sentuh Tanahku dan di Kantor Pertanahan — target "cara cek sertifikat tanah" (1.900) — 2026-11-26 cara-cek-sertifikat-tanah
 - [ ] AJB tanah: apa itu, siapa yang membuat, dan kapan diperlukan — target "ajb tanah" (1.900)
 - [ ] Biaya bangun rumah per meter persegi: cara memperkirakan untuk rumah di Sukabumi — target "biaya bangun rumah" (880)
 - [ ] Tanah SHM: arti, kelebihan, dan cara memastikannya — target "tanah shm" (390)
